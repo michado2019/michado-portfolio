@@ -5,7 +5,7 @@ function App(){
 
   return(
     <div className="appWrapper">
-      <h1>Michado Portfolio</h1>
+      
     </div>
   );
 }
