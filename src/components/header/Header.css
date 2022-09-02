@@ -1,0 +1,21 @@
+.headerWrapper{
+    @apply flex items-center justify-between px-[40px] py-[20px]
+}
+.headerLogo{
+    @apply text-[32px] font-bold text-[#424242] 
+}
+.headerMenu-icon{
+    display: none !important;
+    @apply w-10 h-10 text-[#424242] !important
+}
+
+.menuContent{
+    @apply flex text-[#424242]
+}
+.menuContent-text{
+    @apply text-[24px] ml-4 font-semibold border-spacing-1 border-[#d1cdcd]
+}
+.menuContent-text:hover{
+    transition: all 0.3s;
+    @apply cursor-pointer border-b-[3px]
+}
