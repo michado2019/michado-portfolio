@@ -16,7 +16,7 @@
 }
 
 .menuContent{
-    @apply flex text-[#424242] mt-[-10px] h-[70px]
+    @apply flex text-[#424242] mt-[-10px] h-[70px] 
 }
 .cancel{
     display: none !important;
@@ -35,8 +35,9 @@
         @apply px-[20px] py-[10px] 
     }
     .menuContent{
+        margin-bottom: -250px !important;
        display: none;
-        @apply  flex-col rounded-[5px] w-32 h-40 bg-[#313131] text-center mt-2 pt-1 ml-[-40px]
+        @apply  flex-col rounded-[5px] w-32 h-40 bg-[#232323] text-center mt-2 pt-1 ml-[-40px] 
     }
     .cancel{
     display: block !important;

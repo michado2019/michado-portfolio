@@ -52,6 +52,7 @@
     50% {transform: rotate(0); }
     100% {transform: rotate(-50deg); }
 }
+
 @media (max-width: 600px) {
     .mainWrapper{
         @apply flex mt-[18%]
