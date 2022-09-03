@@ -1,8 +1,14 @@
 .headerWrapper{
-    @apply flex items-center justify-between px-[40px] py-[20px]
+    @apply  px-[40px] py-[15px]  top-0 
+}
+.headerFlex{
+    @apply flex justify-between 
+}
+.headerFlex-1{
+    @apply flex
 }
 .headerLogo{
-    @apply text-[32px] font-bold text-[#424242] 
+    @apply text-[24px] font-semibold text-[#424242] mr-auto
 }
 .headerMenu-icon{
     display: none !important;
@@ -10,12 +16,41 @@
 }
 
 .menuContent{
-    @apply flex text-[#424242]
+    @apply flex text-[#424242] mt-[-10px] h-[70px]
+}
+.cancel{
+    display: none !important;
+    @apply float-right text-white !important
 }
 .menuContent-text{
-    @apply text-[24px] ml-4 font-semibold border-spacing-1 border-[#d1cdcd]
+    @apply text-[30px] ml-1 border-b-[1px] mt-[18px] !important
 }
 .menuContent-text:hover{
     transition: all 0.3s;
-    @apply cursor-pointer border-b-[3px]
+    @apply cursor-pointer border-b-[5px] border-[#3242aa] 
+}
+
+@media (max-width: 768px) {
+    .headerWrapper{
+        @apply px-[20px] py-[10px] 
+    }
+    .menuContent{
+       display: none;
+        @apply  flex-col rounded-[5px] w-32 h-40 bg-[#313131] text-center mt-2 pt-1 ml-[-40px]
+    }
+    .cancel{
+    display: block !important;
+    }
+    .menuContent-text{
+        @apply border-b-[1px] border-white text-[12px] text-white rounded-[5px] mt-0 !important
+    }
+    .headerMenu-icon{
+        display: block !important;
+    }
+    
+} 
+@media (max-width: 600px) {
+    .menuContent-text{
+        @apply  text-[5px] mt-[-12px] !important 
+    }
 }
