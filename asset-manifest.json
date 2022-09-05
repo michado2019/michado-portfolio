@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/michado-portfolio/static/css/main.9bfc8f4d.css",
+    "main.css": "/michado-portfolio/static/css/main.dc851532.css",
     "main.js": "/michado-portfolio/static/js/main.fc58b3b8.js",
     "index.html": "/michado-portfolio/index.html",
-    "main.9bfc8f4d.css.map": "/michado-portfolio/static/css/main.9bfc8f4d.css.map",
+    "main.dc851532.css.map": "/michado-portfolio/static/css/main.dc851532.css.map",
     "main.fc58b3b8.js.map": "/michado-portfolio/static/js/main.fc58b3b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bfc8f4d.css",
+    "static/css/main.dc851532.css",
     "static/js/main.fc58b3b8.js"
   ]
 }
