@@ -22,7 +22,7 @@
   animation-name: hire;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  @apply text-[14px];
+  @apply text-[14px] ml-4;
 }
 @keyframes hire {
   0% {

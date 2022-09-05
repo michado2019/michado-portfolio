@@ -9,11 +9,9 @@
   @apply flex justify-between;
 }
 .footer-icons {
-  @apply mx-4 cursor-pointer w-[50px] ;
+  @apply mx-4 cursor-pointer w-[40px] h-[40px] rounded-md;
 }
-#githubIcon, #emailIcon{
-    @apply mt-[-100px] 
-  }
+
 .footer-copyright {
   @apply text-center mt-[12%];
 }

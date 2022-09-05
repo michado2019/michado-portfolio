@@ -38,7 +38,7 @@ export default function Header() {
             </a>
             <a href='https://drive.google.com/file/d/16N4n5-1gm3RJSk0mwPwrYWPMP9Ev3ly7/view?usp=sharing'>
               <div className='menuContent-text'>
-                <MenuItem className='menuItems'>My Cv</MenuItem>
+                <MenuItem className='menuItems'>My CV</MenuItem>
               </div>
             </a>
           </div>
