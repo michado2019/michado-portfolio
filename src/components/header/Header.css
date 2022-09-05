@@ -1,57 +1,57 @@
-.headerWrapper{
-    @apply  px-[40px] py-[15px]  top-0 
+.headerWrapper {
+  @apply px-[40px] py-[15px]  top-0;
 }
-.headerFlex{
-    @apply flex justify-between 
+.headerFlex {
+  @apply flex justify-between;
 }
-.headerFlex-1{
-    @apply flex
+.headerFlex-1 {
+  @apply flex;
 }
-.headerLogo{
-    @apply text-[24px] font-semibold text-[#424242] mr-auto
+.headerLogo {
+  @apply text-[24px] font-semibold text-[#424242] mr-auto;
 }
-.headerMenu-icon{
-    display: none !important;
-    @apply w-10 h-10 text-[#424242] !important
+.headerMenu-icon {
+  display: none !important;
+  @apply w-10 h-10 text-[#424242] !important;
 }
-
-.menuContent{
-    @apply flex text-[#424242] mt-[-10px] h-[70px] 
+.menuContent {
+  @apply flex text-[#424242]  mr-[-20px] mt-[-10px] h-[70px];
 }
-.cancel{
-    display: none !important;
-    @apply float-right text-white !important
+.cancel {
+  display: none !important;
+  @apply float-right text-white !important;
 }
-.menuContent-text{
-    @apply text-[30px] ml-1 border-b-[1px] mt-[18px] !important
+.menuContent-text {
+  @apply text-[30px] ml-1 border-b-[1px] mt-[18px] !important;
 }
-.menuContent-text:hover{
-    transition: all 0.3s;
-    @apply cursor-pointer border-b-[5px] border-[#3242aa] 
+.menuContent-text:hover {
+  transition: all 0.3s;
+  @apply cursor-pointer border-b-[3px] border-[#3242aa] !important;
 }
-
+.menuItems {
+  @apply font-semibold text-[18px] !important;
+}
 @media (max-width: 768px) {
-    .headerWrapper{
-        @apply px-[20px] py-[10px] 
-    }
-    .menuContent{
-        margin-bottom: -250px !important;
-       display: none;
-        @apply  flex-col rounded-[5px] w-32 h-40 bg-[#232323] text-center mt-2 pt-1 ml-[-40px] 
-    }
-    .cancel{
+  .headerWrapper {
+    @apply px-[20px] py-[10px];
+  }
+  .menuContent {
+    margin-bottom: -250px !important;
+    display: none;
+    @apply flex-col rounded-[5px] w-32 h-40 bg-[#232323] text-center mt-2 pt-1 ml-[-40px];
+  }
+  .cancel {
     display: block !important;
-    }
-    .menuContent-text{
-        @apply border-b-[1px] border-white text-[12px] text-white rounded-[5px] mt-0 !important
-    }
-    .headerMenu-icon{
-        display: block !important;
-    }
-    
-} 
+  }
+  .menuContent-text {
+    @apply border-b-[1px] border-white text-[12px] text-white rounded-[5px] mt-0 !important;
+  }
+  .headerMenu-icon {
+    display: block !important;
+  }
+}
 @media (max-width: 600px) {
-    .menuContent-text{
-        @apply  text-[5px] mt-[-12px] !important 
-    }
+  .menuContent-text {
+    @apply text-[5px] mt-[-12px] !important;
+  }
 }

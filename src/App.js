@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import About from "./components/about/About";
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,8 +19,6 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
-
   );
 }
-
 export default App;

@@ -5,13 +5,10 @@ import { Link } from 'react-router-dom'
 import MenuItem from '@mui/material/MenuItem'
 
 export default function Header() {
-
-  
-  function handleMenu(){
+  function handleMenu() {
     document.getElementById('menuContent').style.display = 'block'
-
   }
-  function handleMenuCancel(){
+  function handleMenuCancel() {
     document.getElementById('menuContent').style.display = 'none'
   }
   return (
@@ -23,25 +20,25 @@ export default function Header() {
         <div className='headerFlex-1'>
           <Menu className='headerMenu-icon' id='headerMenu-icon' onClick={handleMenu} />
           <div className='menuContent' id='menuContent'>
-            <CancelOutlined className='cancel' onClick={handleMenuCancel}/>
+            <CancelOutlined className='cancel' onClick={handleMenuCancel} />
             <Link to='/michado-portfolio'>
               <div className='menuContent-text'>
-                <MenuItem>Home</MenuItem>
+                <MenuItem className='menuItems'>Home</MenuItem>
               </div>
             </Link>
             <Link to='/about'>
               <div className='menuContent-text'>
-                <MenuItem>About</MenuItem>
+                <MenuItem className='menuItems'>About</MenuItem>
               </div>
             </Link>
             <a href='https://github.com/michado2019?tab=repositories'>
               <div className='menuContent-text'>
-                <MenuItem>Projects</MenuItem>
+                <MenuItem className='menuItems'>Projects</MenuItem>
               </div>
             </a>
-            <a href='https://docs.google.com/document/d/1rdklE1nOA99g-a7Pi7Q57G6YBT3Jjh9ENOSSHNQHET4/edit?usp=sharing'>
+            <a href='https://drive.google.com/file/d/16N4n5-1gm3RJSk0mwPwrYWPMP9Ev3ly7/view?usp=sharing'>
               <div className='menuContent-text'>
-                <MenuItem>My Cv</MenuItem>
+                <MenuItem className='menuItems'>My Cv</MenuItem>
               </div>
             </a>
           </div>
