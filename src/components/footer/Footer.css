@@ -15,6 +15,7 @@
 .footer-copyright {
   @apply text-center mt-[12%];
 }
+
 @media (max-width: 600px) {
   .footerWrapper {
     margin: 0 auto;
@@ -32,4 +33,12 @@
   .footer-copyright {
     @apply mt-[25%];
   }
+}
+@media (max-width: 400px) {
+    .footer-copyright {
+        @apply mt-[35%];
+      }
+      .footer-icons {
+        @apply w-[35px] h-[35px]
+      }
 }
