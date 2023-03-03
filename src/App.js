@@ -12,7 +12,7 @@ function App() {
       <div className="appWrapper">
         <Header />
         <Switch>
-          <Route exact path="/michado-portfolio" component={Main} />
+          <Route exact path="/" component={Main} />
           <Route path="/about" component={About} />
         </Switch>
         <Route />

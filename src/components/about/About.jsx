@@ -12,8 +12,7 @@ export default function About() {
         curiosity, problem-solving and obsessive attention to detail. I have
         a working knowledge of languages and frameworks such as React,
         JavaScript, Html5, Tailwind CSS, and CSS3. I also know how to use React component
-        libraries such as Bootstrap and Material UI. I have a good understanding of
-        test-driven development using React testing library and version
+        libraries such as Bootstrap and Material UI. I have a good understanding of version
         control with git. I am a student of The ALT School Africa, School of Software Engineering. And also
         a graduate of Food Science and Nutrition.
       </p >
