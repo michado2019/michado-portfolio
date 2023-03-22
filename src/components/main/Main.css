@@ -1,28 +1,46 @@
 .mainWrapper {
-  @apply flex mt-[7%];
+  background-image: url("https://images.all-free-download.com/images/graphicwebp/3d_simplify_business_513593.webp");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite alternate;
+  @apply flex p-2 pt-[200px];
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
 }
 .mainIntro-flex {
   margin: 0 auto;
   @apply flex flex-col text-center font-semibold;
 }
 .mainIntro-greetings {
-  @apply text-[24px] pb-[16px] text-[#424242];
+  @apply text-[32px] pb-[16px] text-[#282828];
 }
 .mainIntro-job {
+  font-weight: 500;
   font-family: "Permanent Marker", cursive;
-  @apply text-[16px] text-[#2e2e2e] mt-[5%];
+  @apply text-[24px] mt-[5%] text-[#2e2e2e];
 }
 .mainHire-me_div {
-  @apply mt-24 ml-[-4%];
+  @apply mt-8 ml-[-4%];
 }
 .mainHire-me_btn {
-  padding: 7px 14px;
+  padding: 10px 40px;
   color: #fff;
   border-radius: 5px;
   animation-name: hire;
   animation-duration: 5s;
+  font-weight: 700;
   animation-iteration-count: infinite;
-  @apply text-[14px] ml-4;
+  @apply text-[24px] ml-4;
 }
 @keyframes hire {
   0% {
@@ -35,31 +53,19 @@
     background-color: #3242aa;
   }
 }
-.mainBell {
-  @apply w-8 h-8 ml-[30%] mt-[-60px] text-[#727cba] !important;
-}
-.mainBell {
-  animation-name: bell;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-@keyframes bell {
-  0% {
-    transform: rotate(-70deg);
-  }
-  50% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-50deg);
-  }
+.mainHire-me_btn:hover {
+  padding: 8px 45px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
 }
 @media (max-width: 600px) {
-  .mainWrapper {
-    @apply flex mt-[18%];
-  }
   .mainIntro-greetings {
-    @apply text-[18px];
+    font-size: 24px;
+  }
+  .mainIntro-job {
+    font-size: 20px;
   }
   .mainBell {
     @apply ml-[24%] !important;

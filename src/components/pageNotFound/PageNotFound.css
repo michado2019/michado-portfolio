@@ -1,0 +1,22 @@
+.pageNot-found_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 400px;
+  width: 100%;
+}
+.pageNot-found_title {
+  color: rgb(96, 19, 19);
+  font-size: 32px;
+}
+.pageNot-found_home {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #3242aa;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+}

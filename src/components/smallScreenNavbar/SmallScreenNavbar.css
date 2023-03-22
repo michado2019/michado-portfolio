@@ -1,0 +1,19 @@
+.smallScreen-navbar_wrapper {
+  padding: 40px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  position: fixed;
+  width: 100%;
+  display: flex;
+}
+.smallScreen-navbar_link {
+  font-size: 24px;
+  color: #3242aa;
+}
+@media screen and (min-width: 768px){
+    .smallScreen-navbar_wrapper{
+        display: none;
+    }
+}

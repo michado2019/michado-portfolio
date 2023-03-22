@@ -4,12 +4,14 @@ import { CancelOutlined, Menu } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import MenuItem from '@mui/material/MenuItem'
 
-export default function Header() {
+export default function Header({setDisplay, display}) {
+
+  
   function handleMenu() {
-    document.getElementById('menuContent').style.display = 'block'
+    setDisplay(prev => !prev)
   }
   function handleMenuCancel() {
-    document.getElementById('menuContent').style.display = 'none'
+    setDisplay(false)
   }
   return (
     <div className='headerWrapper'>
@@ -18,20 +20,24 @@ export default function Header() {
           <h1 className='headerLogo'>Michado</h1>
         </Link>
         <div className='headerFlex-1'>
-          <Menu className='headerMenu-icon' id='headerMenu-icon' onClick={handleMenu} />
-          <div className='menuContent' id='menuContent'>
+          {
+            display ?
             <CancelOutlined className='cancel' onClick={handleMenuCancel} />
+            :
+          <Menu className='headerMenu-icon' id='headerMenu-icon' onClick={handleMenu} />
+          }
+          <div className='menuContent'>
             <Link to='/michado-portfolio'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>Home</MenuItem>
               </div>
             </Link>
-            <Link to='/about'>
+            <a href='#about'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>About</MenuItem>
               </div>
-            </Link>
-            <a href='https://github.com/michado2019?tab=repositories'>
+            </a>
+            <a href='#projects'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>Projects</MenuItem>
               </div>

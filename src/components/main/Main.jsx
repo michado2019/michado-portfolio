@@ -1,6 +1,5 @@
 import React from 'react'
 import './Main.css'
-import { NotificationsNoneOutlined } from '@mui/icons-material'
 
 export default function Main() {
    return (
@@ -17,7 +16,6 @@ export default function Main() {
                   <button className='mainHire-me_btn'>Hire Me</button>
                </a>
             </span>
-            <NotificationsNoneOutlined className='mainBell' />
          </div>
       </div>
    )
