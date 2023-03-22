@@ -14,6 +14,10 @@
     background-color: transparent;
     border-radius: 50%;
 }
+.paginationBtn:hover{
+    width: 35px;
+    height: 35px;
+}
 .pagination {
   color: #3242aa;
   margin: 10px;
@@ -26,5 +30,10 @@
     border: 3px solid #3242aa;
     box-shadow: 2px 3px 5px #ccc;
     background-color: transparent;
+  }
+  .prev:hover, .next:hover {
+    color: #3242aa;
+    width: 45px;
+    height: 45px;
   }
 

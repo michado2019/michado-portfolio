@@ -22,7 +22,7 @@
   @apply float-right w-10 h-10 text-[#f2f2f2] cursor-pointer !important ;
 }
 .menuContent-text {
-  @apply text-[30px] ml-1 border-b-[1px] mt-[18px] !important;
+  @apply text-[30px] ml-1 border-b-[4px] border-blue-200 mt-[18px] !important;
 }
 .menuContent-text:hover {
   transition: all 0.3s;

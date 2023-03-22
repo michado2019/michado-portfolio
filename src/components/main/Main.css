@@ -1,13 +1,12 @@
 .mainWrapper {
   background-image: url("https://images.all-free-download.com/images/graphicwebp/3d_simplify_business_513593.webp");
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 95%;
   background-attachment: fixed;
-  height: 100vh;
   background-position: 0px 0px;
   background-repeat: repeat-x;
   animation: animatedBackground 10s linear infinite alternate;
-  @apply flex p-2 pt-[200px];
+  @apply flex p-2 pt-[200px] pb-[200px];
 }
 @keyframes animatedBackground {
   from {
