@@ -34,17 +34,13 @@ function Projects() {
                   <span className="projectsLabel">Github name: </span>
                   {soloProject.gitHub_name}
                 </h4>
-                <h5 className="projectsGithub-links">
-                  <span className="projectsLabel">Github link: </span>
-                  {soloProject.github_link}
-                </h5>
                 <p className="projectsDetails">
                   <span className="projectsLabel">Project deatails: </span>
                   {soloProject.details}
                 </p>
                 <a className="projectsApplink" href={soloProject.app_link}>
                   <span className="projectsLabel">
-                    Link to the repo on github
+                    Link to the repo online
                   </span>
                 </a>
               </div>
@@ -73,17 +69,13 @@ function Projects() {
                   <span className="projectsLabel">Github name: </span>
                   {collaborativeProject.gitHub_name}
                 </h4>
-                <h5 className="projectsGithub-links">
-                  <span className="projectsLabel">Github link: </span>
-                  {collaborativeProject.github_link}
-                </h5>
                 <p className="projectsDetails">
                   <span className="projectsLabel">Project deatails: </span>
                   {collaborativeProject.details}
                 </p>
                 <a className="projectsApplink" href={collaborativeProject.app_link}>
                   <span className="projectsLabel">
-                    Link to the repo on github
+                    Link to the app online
                   </span>
                 </a>
               </div>
