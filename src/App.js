@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <div className="appWrapper">
         <Header setDisplay={setDisplay} display={display} />
-        <SmallScreenNavbar display={display} />
+        <SmallScreenNavbar display={display} setDisplay={setDisplay}/>
         <Switch>
           <Route exact path="/michado-portfolio" component={Main} />
         <Route path="*" component={PageNotFound} />
