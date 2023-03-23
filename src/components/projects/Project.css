@@ -1,9 +1,9 @@
 .projectsWrapper{
     width: 100%;
-    background-color: #111;
     margin: 120px auto;
 }
 .projectsContents {
+  background-color: #111;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 10px;
