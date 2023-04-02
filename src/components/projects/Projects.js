@@ -8,7 +8,7 @@ function Projects() {
   const [page, setPage] = useState(1);
 
   /*Pagination */
-  const perPage = 2;
+  const perPage = 4;
   const pages = Math.ceil(soloProjectsData.length / perPage);
   const skip = page * perPage - perPage;
   return (
