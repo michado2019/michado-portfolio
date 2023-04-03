@@ -1,24 +1,55 @@
 .aboutWrapper {
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 20px;
   background-color: #111;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @apply w-[100%] h-[100%] mt-[24px];
+  @apply w-[100%] h-[92vh];
+  border-bottom: 1px solid #3242aa;
 }
 .aboutTitle {
-  @apply text-[24px] text-center text-[#3242aa] font-semibold mb-[16px];
+  font-family: "Permanent Marker", cursive;
+  @apply text-[24px] text-center text-[#3242aa] font-semibold;
 }
 .aboutDetails {
   line-height: 32px;
-  box-shadow: -2px 0px 15px 7px rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: -2px 0px 15px 7px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: -2px 0px 15px 7px rgba(0, 0, 0, 0.14);
-  @apply p-2 text-[#f2f2f2] max-w-[70%] mx-auto rounded-2xl text-[20px] text-center;
+  padding: 20px 20px;
+  margin-top: 40px;
+  box-shadow: -2px 3px 7px #3242aa;
+  @apply text-[#ccc] max-w-[70%] mx-auto rounded-2xl text-[16px] text-center;
+}
+@media (max-width: 1024px) {
+  .aboutWrapper {
+    height: 100vh;
+  }
+  .aboutDetails {
+    @apply max-w-[90%];
+  }
 }
 @media (max-width: 768px) {
+  .aboutWrapper {
+    height: 120vh;
+  }
   .aboutDetails {
-    @apply max-w-[95%];
+    @apply max-w-[98%];
+  }
+}
+@media (max-width: 768px) {
+  .aboutWrapper {
+    height: 150vh;
+  }
+}
+@media (max-width: 480px) {
+  .aboutWrapper {
+    height: 160vh;
+  }
+  .aboutTitle{
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .aboutWrapper {
+    height: 200vh;
   }
 }

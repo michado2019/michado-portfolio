@@ -3,5 +3,22 @@
 @tailwind utilities;
 
 body {
-  @apply m-0 p-0 box-border bg-[#f2f2f2];
+  @apply m-0 p-0 box-border bg-[#111];
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #323232; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3242aa; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #323232; /* creates padding around scroll thumb */
 }

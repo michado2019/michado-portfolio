@@ -1,72 +1,94 @@
 .mainWrapper {
-  background-image: url("https://images.all-free-download.com/images/graphicwebp/3d_simplify_business_513593.webp");
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-attachment: fixed;
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-  animation: animatedBackground 10s linear infinite alternate;
-  @apply flex p-2 pt-[200px] pb-[200px];
-}
-@keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
+  @apply flex p-2;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 92vh;
+  margin: 0 auto;
+  border-bottom: 1px solid #3242aa;
+  padding-top: 200px;
 }
 .mainIntro-flex {
-  margin: 0 auto;
-  @apply flex flex-col text-center font-semibold;
+  @apply flex flex-col font-semibold;
 }
 .mainIntro-greetings {
-  @apply text-[32px] pb-[16px] text-[#282828];
+  font-family: "Permanent Marker", cursive;
+  @apply text-[32px] pb-[16px] text-[#ccc];
 }
 .mainIntro-job {
   font-weight: 500;
   font-family: "Permanent Marker", cursive;
-  @apply text-[24px] mt-[5%] text-[#2e2e2e];
+  @apply text-[18px] mt-[5%] text-[#3242aa];
 }
-.mainHire-me_div {
-  @apply mt-8 ml-[-4%];
+.main2Btn-flex_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #ccc;
 }
-.mainHire-me_btn {
-  padding: 10px 40px;
-  color: #fff;
-  border-radius: 5px;
-  animation-name: hire;
-  animation-duration: 5s;
-  font-weight: 700;
-  animation-iteration-count: infinite;
-  @apply text-[24px] ml-4;
-}
-@keyframes hire {
-  0% {
-    background-color: #3242aa;
-  }
-  50% {
-    background-color: #727cba;
-  }
-  100% {
-    background-color: #3242aa;
-  }
-}
-.mainHire-me_btn:hover {
-  padding: 8px 45px;
+.main2-btns {
+  color: #ccc;
+  border: 1px solid #3242aa;
+  font-size: 12px;
+  margin: 3px;
+  padding: 4px 30px;
   border-radius: 4px;
-  font-size: 18px;
-  font-weight: 700;
+}
+.main2-btns:hover {
+  color: #3242aa;
+  border: 1px solid #ccc;
+  margin-left: 9px;
   transition: all 0.3s;
 }
-@media (max-width: 600px) {
+.mainAvatar-img {
+  border-radius: 50%;
+  margin-top: 0;
+  box-shadow: 5px 4px 2px 4px #3242aa;
+  animation: mainAvatar-img 5s infinite alternate;
+}
+@keyframes mainAvatar-img {
+  0% {
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
   .mainIntro-greetings {
-    font-size: 24px;
+    font-size: 16px;
   }
   .mainIntro-job {
-    font-size: 20px;
+    font-size: 14px;
   }
-  .mainBell {
-    @apply ml-[24%] !important;
+  .mainAvatar-img{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .mainWrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120vh;
+    margin-top: -150px;
+  }
+  .mainIntro-flex {
+    justify-content: center;
+    align-items: center;
+    @apply text-center;
+    margin: 40px 0;
+  }
+  @keyframes mainAvatar-img {
+    0% {
+      margin-left: -50px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+  .main2Btn-flex_col {
+    margin: 40px 0;
   }
 }

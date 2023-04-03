@@ -1,3 +1,4 @@
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import React from "react";
 import "./Pagination.css";
 
@@ -23,25 +24,21 @@ function Pagination({ page, pages, setPage }) {
         Pages: {page} of {pages}
       </p>
       {
-        <button
+        <ArrowBackIos
           style={{ backgroundColor: page <= 1 ? "#a9a6a6" : "" }}
           disabled={page <= 1}
           onClick={() => setPage((prev) => prev - 1)}
           className="prev"
-        >
-          prev
-        </button>
+        />
       }
       {
-        <button
+        <ArrowForwardIos
           style={{ backgroundColor: page >= pages ? "#a9a6a6" : "" }}
           disabled={page >= pages}
           aria-disabled={page >= pages}
           onClick={() => setPage((prev) => prev + 1)}
           className="next"
-        >
-          next
-        </button>
+        />
       }
     </div>
   );

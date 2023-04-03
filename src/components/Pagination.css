@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 40px 0;
 }
 .paginationBtn{
     color: #3242aa;
@@ -22,18 +23,19 @@
   margin: 10px;
 }
 .prev, .next {
-    color: #3242aa;
+    color: #3242aa !important;
     margin: 10px;
-    width: 40px;
-    height: 40px;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
     border: 3px solid #3242aa;
     cursor: pointer;
     box-shadow: 2px 3px 5px #ccc;
   }
   .prev:hover, .next:hover {
     color: #3242aa;
-    width: 45px;
-    height: 45px;
+    width: 26px !important;
+    height: 26px !important;
     transition: all 0.3s;
   }
 

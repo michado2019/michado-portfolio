@@ -3,10 +3,9 @@ import './Header.css'
 import { CancelOutlined, Menu } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import MenuItem from '@mui/material/MenuItem'
-
+import logoImg from './assets/logoPortfolio.png'
 export default function Header({setDisplay, display}) {
 
-  
   function handleMenu() {
     setDisplay(prev => !prev)
   }
@@ -16,7 +15,8 @@ export default function Header({setDisplay, display}) {
   return (
     <div className='headerWrapper'>
       <div className='headerFlex'>
-        <Link to='/michado-portfolio'>
+        <Link to='/michado-portfolio' className='headerLogo-div'>
+          <img src={logoImg} alt='logo' className='headerLogo-img'/>
           <h1 className='headerLogo'>Michado</h1>
         </Link>
         <div className='headerFlex-1'>
@@ -40,11 +40,6 @@ export default function Header({setDisplay, display}) {
             <a href='#projects'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>Projects</MenuItem>
-              </div>
-            </a>
-            <a href='https://drive.google.com/file/d/1rXNLzAJh4HwAThWbymC2w9vBTbpeVlS1/view?usp=share_link'>
-              <div className='menuContent-text'>
-                <MenuItem className='menuItems'>My CV</MenuItem>
               </div>
             </a>
           </div>

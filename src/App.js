@@ -8,6 +8,7 @@ import Projects from "./components/projects/Projects";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import SmallScreenNavbar from "./components/smallScreenNavbar/SmallScreenNavbar";
+import TechWriting from "./components/techWriting/TechWriting";
 
 function App() {
 
@@ -29,6 +30,9 @@ function App() {
         <div id="projects">
           <Projects />
         </div>
+        {/* <div id="skillsAnd-tech_writing">
+          <TechWriting />
+        </div> */}
         <Footer />
       </div>
     </BrowserRouter>

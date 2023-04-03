@@ -1,35 +1,55 @@
 .headerWrapper {
-  @apply px-[40px] py-[15px] sticky top-0 left-0 bg-[#3242aa] h-[100px];
+  box-shadow: 1px 1px 2px 2px #3242aa;
+  @apply px-[40px] sticky top-0 left-0 bg-[#111] h-[50px] w-[80%] mx-auto;
 }
 .headerFlex {
-  @apply flex justify-between pt-5;
+  @apply flex justify-between pt-2;
+}
+.headerLogo-div {
+  display: flex;
+  align-items: center;
 }
 .headerFlex-1 {
   @apply flex;
 }
+.headerLogo-img {
+  @apply w-4 h-4 m-1;
+  animation: headerLogo-img 2s linear infinite;
+  border-radius: 50%;
+}
+@keyframes headerLogo-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .headerLogo {
-  @apply text-[24px] font-semibold text-[#f2f2f2] mr-auto;
+  @apply text-[18px] font-semibold text-[#3242aa] mr-auto mt-2;
 }
 .headerMenu-icon {
   display: none !important;
-  @apply w-10 h-10 text-[#f2f2f2] cursor-pointer !important;
+  @apply w-10 h-10 text-[#555] cursor-pointer !important;
 }
 .menuContent {
   @apply flex text-[#f2f2f2]  mr-[-20px] mt-[-30px] h-[70px];
 }
 .cancel {
   display: none !important;
-  @apply float-right w-10 h-10 text-[#f2f2f2] cursor-pointer !important ;
+  @apply float-right w-7 h-7 text-[#ccc] cursor-pointer !important;
 }
 .menuContent-text {
-  @apply text-[30px] ml-1 border-b-[4px] border-blue-200 mt-[18px] !important;
+  color: #ccc;
+  @apply text-[30px] ml-1 mt-[35px] !important;
 }
 .menuContent-text:hover {
   transition: all 0.3s;
-  @apply cursor-pointer border-b-[3px] border-[#3242aa] !important;
+  color: #3242aa;
+  @apply cursor-pointer !important;
 }
 .menuItems {
-  @apply font-semibold text-[18px] border-blue-200 border-4 !important;
+  @apply font-semibold text-[16px] !important;
 }
 @media (max-width: 768px) {
   .headerWrapper {
@@ -38,7 +58,7 @@
   .cancel {
     display: block !important;
   }
-  .menuContent{
+  .menuContent {
     display: none;
   }
   .menuContent-text {
@@ -46,5 +66,19 @@
   }
   .headerMenu-icon {
     display: block !important;
+  }
+}
+@media (max-width: 768px) {
+  .headerWrapper {
+    @apply w-[100%];
+  }
+  .headerFlex {
+    @apply flex justify-between pt-0;
+  }
+  .headerLogo {
+    @apply text-[18px] font-semibold text-[#3242aa] mr-auto mt-[0];
+  }
+  .headerMenu-icon {
+    @apply w-7 h-7 text-[#555] !important;
   }
 }
