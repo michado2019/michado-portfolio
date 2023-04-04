@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -30,9 +31,12 @@ function App() {
         <div id="projects">
           <Projects />
         </div>
-        {/* <div id="skillsAnd-tech_writing">
+          <div>
+          <Skills />
+          </div>
+          <div>
           <TechWriting />
-        </div> */}
+          </div>
         <Footer />
       </div>
     </BrowserRouter>

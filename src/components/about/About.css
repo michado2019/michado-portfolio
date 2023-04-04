@@ -10,6 +10,7 @@
 }
 .aboutTitle {
   font-family: "Permanent Marker", cursive;
+  padding-bottom: 20px;
   @apply text-[24px] text-center text-[#3242aa] font-semibold;
 }
 .aboutDetails {

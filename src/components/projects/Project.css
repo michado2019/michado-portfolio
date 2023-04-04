@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin: 20px;
 }
 .projectsContents{
   display: grid;
@@ -21,37 +22,42 @@
   color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   border: 1px solid #3242aa;
   font-size: 10px;
-  padding: 7px;
+  padding: 15px;
   margin: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
+  min-height: fit-content;
 }
 .projectsImg{
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px 3px #3242aa;
+  width: 100%;
+  height: 130px;
+  margin: 7px 0;
 }
-.projectsGithub-name, .projectsName{
-  text-align: center;
-  padding-top: 5px;
-}
-
-.projectsSearch-link_div{
+.projectTop-flex{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.projectsSearch-link_div{
-  text-align: center;
-}
-.projectsSearch-img{
-  width: 20px !important;
-  height: 20px !important;
+.projectsLaunch{
   color: #3242aa !important;
+}
+.projectsGithub-name, .projectsName, .projectsDetails{
+  padding-top: 5px;
+  font-size: 14px;
+}
+.projectsName{
+  color: #f2f2f2;
+}
+.projectsDetails{
+  color: #ccc;
+}
+@media (max-width: 940px) {
+  .projectsContents{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 768px) {
   .projectsContents{

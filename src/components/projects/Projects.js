@@ -20,11 +20,18 @@ function Projects() {
         {soloProjectsData.slice(skip, skip + perPage).map((each) => {
           return (
             <div className="projectsContent">
-              <img src={each.projectImg} alt="" className="projectsImg" />
+              <a href={each.app_link} className="projectsSearch-link">
+                <div className="projectTop-flex">
               <h4 className="projectsName">{each.projectName}</h4>
-              <div className="projectsSearch-link_div">
-                <a href={each.app_link} className="projectsSearch-link"><Launch className="projectsSearch-img" /></a>
+              <a href={each.app_link}><Launch className="projectsLaunch"/></a>
+                </div>
+              <p className="projectsDetails">{each.details.slice(0, 80)}...</p>
+              <div className="projectsTool-flex">
+                <p className="projectsTools">{each.tool1}</p>
+                <p className="projectsTools">{each.tool2}</p>
               </div>
+              <img src={each.projectImg} alt="img" className="projectsImg" />
+              </a>
             </div>
           );
         })}
@@ -38,11 +45,18 @@ function Projects() {
         {collaborativeProjectsData.slice(skip, skip + perPage).map((each) => {
           return (
             <div className="projectsContent">
-              <img src={each.projectImg} alt="" className="projectsImg" />
+               <a href={each.app_link} className="projectsSearch-link">
+                <div className="projectTop-flex">
               <h4 className="projectsName">{each.projectName}</h4>
-              <div className="projectsSearch-link_div">
-                <a href={each.app_link} className="projectsSearch-link"><Launch className="projectsSearch-img" /></a>
+              <a href={each.app_link}><Launch className="projectsLaunch"/></a>
+                </div>
+              <p className="projectsDetails">{each.details.slice(0, 80)}...</p>
+              <div className="projectsTool-flex">
+                <p className="projectsTools">{each.tool1}</p>
+                <p className="projectsTools">{each.tool2}</p>
               </div>
+              <img src={each.projectImg} alt="img" className="projectsImg" />
+              </a>
             </div>
           );
         })}

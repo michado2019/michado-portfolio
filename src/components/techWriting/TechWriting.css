@@ -1,5 +1,57 @@
-.techWriting-wrapper{
-    height: 50vh;
-    width: 30vh;
-    background-color: #3242aa;
+.techWriting-wrapper {
+  width: 50%;
+  margin: 70px auto;
+  padding: 120px 0;
+  border-bottom: 1px solid #3242aa;
+}
+.techWriting-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.techWriting-main_title {
+  color: #3242aa;
+  font-size: 24px;
+  font-family: "Permanent Marker", cursive;
+  margin-bottom: 150px;
+  margin-top: -70px;
+}
+.techWriting-title {
+  background-color: #fff;
+  font-weight: 700;
+  height: 100px;
+  min-width: fit-content;
+  text-align: center;
+  padding: 5px;
+  padding-top: 30px;
+  color: #ccc;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.techWriting-Index_img {
+  display: flex;
+  align-items: flex-start;
+}
+.techWriting-index {
+  color: #ccc;
+  background-color: #3242aa;
+  padding: 4px;
+  border-radius: 50%;
+  margin: 4px;
+}
+.techWriting-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.techWriting-img {
+  width: 200px;
+  height: 150px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 39px 40px #3242aa;
+}
+.techWriting-link {
+  color: #3242aa;
+  margin-left: 100px;
 }
