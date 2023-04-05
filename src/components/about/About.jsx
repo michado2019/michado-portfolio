@@ -1,11 +1,13 @@
 import React from 'react'
 import './About.css'
-
+import aboutImg from './assets/profile-pix.jpg'
 export default function About() {
   return (
     <div className='aboutWrapper'>
       <h3 className='aboutTitle'>About Me</h3>
-      <p className='aboutDetails'>
+      <div className='aboutFlex'>
+       <img src={aboutImg} alt="img" className="aboutImg" />
+       <p className='aboutDetails'>
         I am a Front-end Web Developer with experiences building websites of
         high standards utilizing best practices, accessibility and web
         optimization techniques. I am a self-starter defined by persistence,
@@ -16,6 +18,7 @@ export default function About() {
         control with git. I am a student of The ALT School Africa, School of Software Engineering. And also
         a graduate of Food Science and Nutrition.
       </p >
+      </div>
     </div>
   )
 }

@@ -68,7 +68,4 @@
   .projectsContents{
     grid-template-columns: 1fr;
   }
-  .projectsTitle{
-    font-size: 16px;
-  }
 }

@@ -13,6 +13,18 @@
   padding-bottom: 20px;
   @apply text-[24px] text-center text-[#3242aa] font-semibold;
 }
+.aboutFlex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutImg{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 39px 40px #3242aa;
+  @apply mx-auto;
+}
 .aboutDetails {
   line-height: 32px;
   padding: 20px 20px;
@@ -41,16 +53,24 @@
     height: 150vh;
   }
 }
+@media (max-width: 600px) {
+  .aboutWrapper{
+    height: 190vh;
+  }
+  .aboutFlex{
+    flex-direction: column;
+  }
+  .aboutImg{
+    margin: 70px auto;
+  }
+}
 @media (max-width: 480px) {
   .aboutWrapper {
-    height: 160vh;
-  }
-  .aboutTitle{
-    font-size: 16px;
+    height: 220vh;
   }
 }
 @media (max-width: 375px) {
   .aboutWrapper {
-    height: 200vh;
+    height: 250vh;
   }
 }
