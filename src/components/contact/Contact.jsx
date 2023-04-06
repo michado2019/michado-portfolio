@@ -13,7 +13,7 @@ const Contact = () => {
             <p className="contactEmail-text">Email</p>
           </div>
             </a>
-          <a href="wa.me/2348100075254" className="contactLink">
+          <a href="https://wa.me/2348100075254" className="contactLink">
           <div className="contactFlex2">
             <WhatsApp className="contactWhatsapp" />
             <p className="contactWhatsapp-text">WhatsApp</p>
