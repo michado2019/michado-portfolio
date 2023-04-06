@@ -8,11 +8,16 @@
   grid-template-columns: repeat(7, 1fr);
 }
 .skillsTitle {
-  font-size: 24px;
+  font-size: 18px;
   color: #3242aa;
   text-align: center;
   font-family: "Permanent Marker", cursive;
   padding-bottom: 100px;
+  margin: 70px auto;
+  background-color: #ccc;
+  border-radius: 4px;
+  width: 180px;
+  padding: 3px 4px;
 }
 .skillsContent {
   display: flex;

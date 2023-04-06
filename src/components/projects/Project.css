@@ -1,4 +1,4 @@
-.projectsWrapper{
+ .projectsWrapper{
   border-bottom: 1px solid #3242aa;
   padding: 100px auto;
   display: flex;
@@ -13,10 +13,14 @@
 }
 .projectsTitle{
   font-family: "Permanent Marker", cursive;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: #3242aa;
   margin: 70px;
+  background-color: #ccc;
+  border-radius: 4px;
+  width: 180px;
+  padding: 3px 4px;
 }
 .projectsContent{
   color: #f2f2f2;

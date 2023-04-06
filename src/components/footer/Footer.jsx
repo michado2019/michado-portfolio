@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-
+import { KeyboardDoubleArrowUp } from '@mui/icons-material'
 export default function Footer() {
   return (
     <div className='footerWrapper'>

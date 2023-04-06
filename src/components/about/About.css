@@ -10,8 +10,13 @@
 }
 .aboutTitle {
   font-family: "Permanent Marker", cursive;
-  padding-bottom: 20px;
-  @apply text-[24px] text-center text-[#3242aa] font-semibold;
+  background-color: #ccc;
+  padding-top: -50px;
+  border-radius: 4px;
+  width: 200px;
+  margin: 20px auto;
+  padding: 3px 4px;
+  @apply text-[18px] text-center text-[#3242aa] font-semibold;
 }
 .aboutFlex{
   display: flex;

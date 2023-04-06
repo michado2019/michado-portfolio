@@ -1,0 +1,41 @@
+
+.footerArrow {
+  background-color: #ccc;
+  border-radius: 50%;
+  color: #3242aa !important;
+  width: 30px !important;
+  height: 30px !important;
+  margin-top: -30px;
+  margin-left: 49%;
+  animation: footerArrow 0.5s infinite;
+}
+@keyframes footerArrow {
+    0%{
+  width: 30px !important;
+
+    }
+    100%{
+  width: 33px !important;
+        
+    }
+}
+.footerArrow:hover {
+  width: 32px !important;
+  height: 32 !important;
+  transition: all 0.3s;
+}
+@media (max-width: 1024px) {
+  .footerArrow {
+    margin-left: 48.5%;
+  }
+}
+@media (max-width: 600px) {
+  .footerArrow {
+    margin-left: 47.5%;
+  }
+}
+@media (max-width: 375px) {
+  .footerArrow {
+    margin-left: 46.5%;
+  }
+}

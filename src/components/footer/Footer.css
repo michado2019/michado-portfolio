@@ -8,6 +8,8 @@
 .footer-flex {
   @apply flex justify-between;
 }
+
+
 .footer-icons {
   box-shadow: 2px 3px 5px #3242aa;
   @apply mx-4 cursor-pointer w-[40px] h-[40px] rounded-md;

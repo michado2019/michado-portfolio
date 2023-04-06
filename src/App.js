@@ -10,6 +10,8 @@ import PageNotFound from "./components/pageNotFound/PageNotFound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import SmallScreenNavbar from "./components/smallScreenNavbar/SmallScreenNavbar";
 import TechWriting from "./components/techWriting/TechWriting";
+import Contact from "./components/contact/Contact";
+import { KeyboardDoubleArrowUp } from "@mui/icons-material";
 
 function App() {
 
@@ -37,6 +39,12 @@ function App() {
           <div>
           <TechWriting />
           </div>
+          <div>
+          <Contact />
+          </div>
+          <a href="#top" className='footerArrow-div'>
+          <KeyboardDoubleArrowUp className='footerArrow' />
+          </a>
         <Footer />
       </div>
     </BrowserRouter>
