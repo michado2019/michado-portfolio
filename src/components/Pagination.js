@@ -25,7 +25,10 @@ function Pagination({ page, pages, setPage }) {
       </p>
       {
         <ArrowBackIos
-          style={{ backgroundColor: page <= 1 ? "#a9a6a6" : "" }}
+          style={{
+            backgroundColor: page <= 1 ? "#a9a6a6" : "",
+            display: page <= 1 ? "none" : "block",
+          }}
           disabled={page <= 1}
           onClick={() => setPage((prev) => prev - 1)}
           className="prev"
@@ -33,7 +36,10 @@ function Pagination({ page, pages, setPage }) {
       }
       {
         <ArrowForwardIos
-          style={{ backgroundColor: page >= pages ? "#a9a6a6" : "" }}
+          style={{
+            backgroundColor: page >= pages ? "#a9a6a6" : "",
+            display: page >= pages ? "none" : "block",
+          }}
           disabled={page >= pages}
           aria-disabled={page >= pages}
           onClick={() => setPage((prev) => prev + 1)}
@@ -41,6 +47,6 @@ function Pagination({ page, pages, setPage }) {
         />
       }
     </div>
-  );
+  );git
 }
 export default Pagination;
