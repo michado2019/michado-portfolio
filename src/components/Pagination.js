@@ -47,6 +47,6 @@ function Pagination({ page, pages, setPage }) {
         />
       }
     </div>
-  );git
+  );
 }
 export default Pagination;
