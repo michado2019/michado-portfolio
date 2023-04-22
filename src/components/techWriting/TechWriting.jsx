@@ -9,7 +9,7 @@ const TechWriting = () => {
         <h2 className="techWriting-main_title">Blogs</h2>
         {techWritingData.map((each, index) => {
           return (
-            <div className="techWriting-content">
+            <div className="techWriting-content" key={each.id}>
               <div className="techWriting-Index_img">
                 <h2 className="techWriting-index">{index}</h2>
                 <div className="techWriting-flex">

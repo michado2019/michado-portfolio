@@ -19,7 +19,7 @@ function Projects() {
       <div className="projectsContents">
         {soloProjectsData.slice(skip, skip + perPage).map((each) => {
           return (
-            <div className="projectsContent">
+            <div className="projectsContent" key={each.id}>
               <a href={each.app_link} className="projectsSearch-link">
                 <div className="projectTop-flex">
               <h4 className="projectsName">{each.projectName}</h4>
@@ -44,7 +44,7 @@ function Projects() {
       <div className="projectsContents">
         {collaborativeProjectsData.slice(skip, skip + perPage).map((each) => {
           return (
-            <div className="projectsContent">
+            <div className="projectsContent" key={each.id}>
                <a href={each.app_link} className="projectsSearch-link">
                 <div className="projectTop-flex">
               <h4 className="projectsName">{each.projectName}</h4>
