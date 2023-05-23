@@ -23,7 +23,6 @@ function Projects() {
               <a href={each.app_link} className="projectsSearch-link">
                 <div className="projectTop-flex">
               <h4 className="projectsName">{each.projectName}</h4>
-              <a href={each.app_link}><Launch className="projectsLaunch"/></a>
                 </div>
               <p className="projectsDetails">{each.details.slice(0, 80)}...</p>
               <div className="projectsTool-flex">
@@ -48,7 +47,6 @@ function Projects() {
                <a href={each.app_link} className="projectsSearch-link">
                 <div className="projectTop-flex">
               <h4 className="projectsName">{each.projectName}</h4>
-              <a href={each.app_link}><Launch className="projectsLaunch"/></a>
                 </div>
               <p className="projectsDetails">{each.details.slice(0, 80)}...</p>
               <div className="projectsTool-flex">
