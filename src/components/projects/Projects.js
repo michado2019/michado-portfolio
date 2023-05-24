@@ -3,7 +3,6 @@ import "./Project.css";
 import soloProjectsData from "./projectData/SoloProjectData";
 import collaborativeProjectsData from "./projectData/CollaborativeProjectData";
 import Pagination from "../Pagination";
-import { Launch } from "@mui/icons-material";
 function Projects() {
   const [page, setPage] = useState(1);
 
