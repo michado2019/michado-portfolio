@@ -20,8 +20,8 @@ const Skills = () => {
       }
     };
 
-    // Timer to add an object every 5 seconds
-    const timer = setInterval(addObject, 1000);
+    // Timer to add an object every 0.5 seconds
+    const timer = setInterval(addObject, 500);
 
     // Cleanup function to clear the timer when the component unmounts
     return () => {
@@ -33,9 +33,9 @@ const Skills = () => {
     <div className="skillsWrapper">
       <h2 className="skillsTitle">Skills</h2>
       <div className="skillsContents">
-        {data.map((skill) => {
+        {data.map((skill, index) => {
           return (
-            <div className="skillsContent" key={skill.id}>
+            <div className="skillsContent" key={index}>
               <img src={skill.img} alt="img" className="skillsImg" />
               <h2 className="skillsTool">{skill.tool}</h2>
             </div>

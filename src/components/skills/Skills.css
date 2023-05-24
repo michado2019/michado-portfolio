@@ -28,7 +28,7 @@
   margin: 10px;
   box-shadow: 1px 2px 4px 3px #3242aa;
   padding: 3px;
-  animation: skills 0.5s
+  animation: skills 0.3s
 }
 @keyframes skills {
   0%{
@@ -47,6 +47,15 @@
   font-size: 12px;
   font-family: "Permanent Marker", cursive;
   color: #ccc;
+  animation: tools 0.7s
+}
+@keyframes tools {
+  0%{
+    margin-right: -50px;
+  } 
+  100%{
+    margin-right: 0;
+  }
 }
 @media (max-width: 768px) {
     .skillsWrapper{
