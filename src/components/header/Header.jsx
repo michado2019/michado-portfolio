@@ -20,7 +20,8 @@ export default function Header({setDisplay, display, count, minute, hour}) {
           <h1 className='headerLogo'>Michado</h1>
         </Link>
         <div className="headerTime">
-          {hour}h : {minute}m : {count}s
+          <span>Spent time: </span>
+          <span>{hour}h : {minute}m : {count}s</span>
         </div>
         <div className='headerFlex-1'>
           {

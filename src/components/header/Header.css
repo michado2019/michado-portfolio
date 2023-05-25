@@ -43,6 +43,9 @@
   border-radius: 2px;
   min-width: fit-content;
 }
+.headerTime span{
+  margin-left: 5px ;
+}
 .headerMenu-icon {
   display: none !important;
   @apply w-10 h-10 text-[#555] cursor-pointer !important;
