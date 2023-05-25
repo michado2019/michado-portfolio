@@ -4,7 +4,7 @@ import { CancelOutlined, Menu } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import MenuItem from '@mui/material/MenuItem'
 import logoImg from './assets/logoPortfolio.png'
-export default function Header({setDisplay, display}) {
+export default function Header({setDisplay, display, count, minute, hour}) {
 
   function handleMenu() {
     setDisplay(prev => !prev)
@@ -19,6 +19,9 @@ export default function Header({setDisplay, display}) {
           <img src={logoImg} alt='logo' className='headerLogo-img'/>
           <h1 className='headerLogo'>Michado</h1>
         </Link>
+        <div className="headerTime">
+          {hour}h : {minute}m : {count}s
+        </div>
         <div className='headerFlex-1'>
           {
             display ?

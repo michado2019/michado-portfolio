@@ -1,11 +1,4 @@
-.appTime{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0;
-  margin-left: 200px;
-  color: #ccc;
-}
+
 .footerArrow {
   background-color: #ccc;
   border-radius: 50%;

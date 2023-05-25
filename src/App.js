@@ -15,25 +15,42 @@ import { KeyboardDoubleArrowUp } from "@mui/icons-material";
 
 function App() {
   //use state
-  const [display, setDisplay] = useState(false);
-  const [minute, setMinute] = useState(0);
-  const [hour, setHour] = useState(0);
-  const [count, setCount] = useState(0);
+  const [display, setDisplay] = useState(false);         
+  const [count, setCount] = useState(() => {            //State for count
+    const savedCount = localStorage.getItem("count");
+    const parsedSavedCount = parseInt(savedCount)
+    return parsedSavedCount ? parsedSavedCount : 0;
+  });
+  const [minute, setMinute] = useState(() => {          //State for minute
+    const savedMinute = localStorage.getItem("minute");
+    const parsedSavedMinute = parseInt(savedMinute)
+    return parsedSavedMinute ? parsedSavedMinute : 0;
+  });
+  const [hour, setHour] = useState(() => {               //State for hour
+    const savedHour = localStorage.getItem("hour");
+    const parsedSavedHour = parseInt(savedHour)
+    return parsedSavedHour ? parsedSavedHour : 0;
+  });
 
   //useEffect
   useEffect(() => {
     // Function to set time
     const time = () => {
       if (count < 59) {
-        setCount((prev) => prev + 1);
+        setCount(prev => prev + 1);
       } else {
         setCount(0);
-        setMinute((prev) => prev + 1);
+        setMinute(prev => prev + 1);
       }
-      if (minute === 59) {
-        setHour((prev) => prev + 1);
-        setMinute(0)
+      if (minute === 60 ) {
+        setHour(prev => prev + 1);
+        setMinute(0);
       }
+
+      //LocalStorage for count, minute, and hour
+      localStorage.setItem("count", count);
+      localStorage.setItem("minute", minute);
+      localStorage.setItem("hour", hour);
     };
 
     // Timer to set time every 1 seconds
@@ -43,14 +60,11 @@ function App() {
     return () => {
       clearInterval(timer);
     };
-  }, [count, minute]); // As count and minute change the effect is run
+  }, [count, minute, hour]); // As count and minute change the effect is run
   return (
     <BrowserRouter>
       <div className="appWrapper">
-        <Header setDisplay={setDisplay} display={display} />
-        <div className="appTime">
-          {hour}h : {minute}m : {count}s
-        </div>
+        <Header setDisplay={setDisplay} display={display} count={count} minute={minute} hour={hour}/>
         <SmallScreenNavbar display={display} setDisplay={setDisplay} />
         <Switch>
           <Route exact path="/michado-portfolio" component={Main} />
