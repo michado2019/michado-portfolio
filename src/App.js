@@ -67,13 +67,11 @@ function App() {
         <SmallScreenNavbar display={display} setDisplay={setDisplay} />
         <Switch>
           <Route exact path="/michado-portfolio" component={Main} />
+          <Route exact path="/projects" component={Projects} />
           <Route path="*" component={PageNotFound} />
         </Switch>
         <Route />
         <div id="about">
-        </div>
-        <div id="projects">
-          <Projects />
         </div>
         <div>
           <Skills />

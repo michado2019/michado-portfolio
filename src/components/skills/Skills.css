@@ -1,4 +1,5 @@
 .skillsWrapper {
+  padding: 0 2.5%;
   padding-top: 70px;
   border-bottom: 1px solid #3242aa;
   height: 80vh;
@@ -25,7 +26,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px;
   box-shadow: 1px 2px 4px 3px #3242aa;
   padding: 3px;
   animation: skills 0.3s
@@ -67,7 +67,7 @@
 }
 @media (max-width: 480px) {
     .skillsWrapper{
-        height: 130vh;
+        height: 110vh;
     }
     .skillsContents {
         grid-template-columns: repeat(3, 1fr);

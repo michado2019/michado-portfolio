@@ -2,6 +2,8 @@
   margin: 70px auto;
   padding: 120px 0;
   border-bottom: 1px solid #3242aa;
+  height: 100vh;
+  min-height: fit-content;
 }
 .techWriting-content {
   width: 50%;
@@ -63,4 +65,14 @@
 .techWriting-link {
   color: #3242aa;
   margin-left: 100px;
+}
+@media (max-width: 320px) {
+  .techWriting-img {
+    width: 150px;
+    height: 100px;
+    box-shadow: 1px 1px 29px 30px #3242aa;
+  }
+  .techWriting-title {
+    font-size: 12px;
+  }
 }

@@ -15,8 +15,10 @@ const Skills = () => {
         const newObj = skills[i]; // Create a new object with a timestamp property
         setData((prevData) => [...prevData, newObj]); // Add the new object to the data array
       } else {
-        setI(0);
-        setData([]);
+        setTimeout(() => {
+          setI(0);
+          setData([]);
+        }, 5000);
       }
     };
 

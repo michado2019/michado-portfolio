@@ -41,11 +41,11 @@ export default function Header({setDisplay, display, count, minute, hour}) {
                 <MenuItem className='menuItems'>About</MenuItem>
               </div>
             </a>
-            <a href='#projects'>
+            <Link to='/projects'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>Projects</MenuItem>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

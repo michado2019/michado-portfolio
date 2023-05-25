@@ -2,8 +2,8 @@ import React from 'react'
 import './About.css'
 import aboutImg from './assets/profile-pix.jpg'
 export default function About() {
-  return (
-    <div className='aboutWrapper'>
+  return ( 
+    <div className='aboutWrapper' id="about">
       <h3 className='aboutTitle'>About Me</h3>
       <div className='aboutFlex'>
        <img src={aboutImg} alt="img" className="aboutImg" />

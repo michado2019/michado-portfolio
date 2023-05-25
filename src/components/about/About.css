@@ -1,12 +1,12 @@
 .aboutWrapper {
-  margin: 50px auto;
   padding: 0 20px;
   background-color: #111;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @apply w-[100%] h-[92vh];
+  @apply w-[100%] h-[100vh];
   border-bottom: 1px solid #3242aa;
+  min-height: fit-content
 }
 .aboutTitle {
   font-family: "Permanent Marker", cursive;
@@ -27,7 +27,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 1px 1px 39px 40px #3242aa;
+  box-shadow: 1px 1px 19px 20px #3242aa;
   @apply mx-auto;
 }
 .aboutDetails {
@@ -35,32 +35,19 @@
   padding: 20px 20px;
   margin-top: 40px;
   box-shadow: -2px 3px 7px #3242aa;
-  @apply text-[#ccc] max-w-[70%] mx-auto rounded-2xl text-[16px] text-center;
-}
-@media (max-width: 1024px) {
-  .aboutWrapper {
-    height: 100vh;
-  }
-  .aboutDetails {
-    @apply max-w-[90%];
-  }
-}
-@media (max-width: 768px) {
-  .aboutWrapper {
-    height: 120vh;
-  }
-  .aboutDetails {
-    @apply max-w-[98%];
-  }
+  @apply text-[#ccc] max-w-[65%] mx-auto rounded-2xl text-[16px] text-center;
 }
 @media (max-width: 768px) {
   .aboutWrapper {
     height: 150vh;
   }
+  .aboutDetails {
+    @apply max-w-[55%];
+  }
 }
 @media (max-width: 600px) {
   .aboutWrapper{
-    height: 190vh;
+    height: 170vh;
   }
   .aboutFlex{
     flex-direction: column;
@@ -68,13 +55,22 @@
   .aboutImg{
     margin: 70px auto;
   }
+  .aboutDetails {
+    @apply max-w-[95%];
+  }
 }
+
 @media (max-width: 480px) {
+  .aboutWrapper {
+    height: 190vh;
+  }
+}
+@media (max-width: 375px) {
   .aboutWrapper {
     height: 220vh;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   .aboutWrapper {
     height: 250vh;
   }
