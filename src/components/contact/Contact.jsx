@@ -7,18 +7,28 @@ const Contact = () => {
       <div className="contactContent">
         <h2 className="contactTitle">Contact</h2>
         <div className="contactFlex">
-            <a href="mailto:adeshinaobafemi09@gmail.com" className="contactLink">
-          <div className="contactFlex2">
-            <EmailOutlined className="contactEmail" />
-            <p className="contactEmail-text">Email</p>
-          </div>
-            </a>
-          <a href="https://wa.me/2348100075254" className="contactLink">
-          <div className="contactFlex2">
-            <WhatsApp className="contactWhatsapp" />
-            <p className="contactWhatsapp-text">WhatsApp</p>
-          </div>
-            </a>
+          <a
+            href="mailto:adeshinaobafemi09@gmail.com"
+            className="contactLink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="contactFlex2">
+              <EmailOutlined className="contactEmail" />
+              <p className="contactEmail-text">Email</p>
+            </div>
+          </a>
+          <a
+            href="https://wa.me/2348100075254"
+            className="contactLink"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="contactFlex2">
+              <WhatsApp className="contactWhatsapp" />
+              <p className="contactWhatsapp-text">WhatsApp</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

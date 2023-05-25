@@ -18,12 +18,16 @@ export default function Main() {
           <a
             href="https://drive.google.com/file/d/1rXNLzAJh4HwAThWbymC2w9vBTbpeVlS1/view?usp=share_link"
             className="main2-btns"
+            target="_blank"
+            rel="noreferrer"
           >
             Download CV
           </a>
           <a
             href="https://wa.me/08100075254"
             className="main2-btns"
+            target="_blank"
+            rel="noreferrer"
           >
             Whatsapp
           </a>
@@ -31,6 +35,8 @@ export default function Main() {
             href="mailto: adeshinaobafemi09@gmail.com"
             className="main2-btns"
             id="main2-btn"
+            target="_blank"
+            rel="noreferrer"
           >
             Hire Me
           </a>

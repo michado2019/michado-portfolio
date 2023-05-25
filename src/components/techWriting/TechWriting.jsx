@@ -14,11 +14,13 @@ const TechWriting = () => {
                 <h2 className="techWriting-index">{index}</h2>
                 <div className="techWriting-flex">
                   <img src={each.img} alt="img" className="techWriting-img" />
-                  <h2 className="techWriting-title">{each.title.slice(0, 40)}...</h2>
+                  <h2 className="techWriting-title">
+                    {each.title.slice(0, 40)}...
+                  </h2>
                 </div>
               </div>
-              <a href={each.link}>
-                <Launch className="techWriting-link"/>
+              <a href={each.link} target="_blank" rel="noreferrer">
+                <Launch className="techWriting-link" />
               </a>
             </div>
           );

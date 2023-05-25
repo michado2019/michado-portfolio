@@ -32,6 +32,7 @@ function App() {
       }
       if (minute === 59) {
         setHour((prev) => prev + 1);
+        setMinute(0)
       }
     };
 
