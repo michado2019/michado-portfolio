@@ -42,7 +42,7 @@ function App() {
         setCount(0);
         setMinute(prev => prev + 1);
       }
-      if (minute === 60 ) {
+      if (minute === 59.99 ) {
         setHour(prev => prev + 1);
         setMinute(0);
       }
