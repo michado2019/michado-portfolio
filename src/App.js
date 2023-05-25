@@ -3,7 +3,6 @@ import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
@@ -42,7 +41,7 @@ function App() {
         setCount(0);
         setMinute(prev => prev + 1);
       }
-      if (minute === 59.99 ) {
+      if (minute === 60 ) {
         setHour(prev => prev + 1);
         setMinute(0);
       }
@@ -72,7 +71,6 @@ function App() {
         </Switch>
         <Route />
         <div id="about">
-          <About />
         </div>
         <div id="projects">
           <Projects />

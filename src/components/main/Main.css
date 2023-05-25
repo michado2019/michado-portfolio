@@ -1,11 +1,12 @@
-.mainWrapper {
+.mainWrapper{
+}
+.mainContents {
+  height: 100vh;
   @apply flex p-2;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
-  height: 92vh;
   margin: 0 auto;
   border-bottom: 1px solid #3242aa;
-  padding-top: 200px;
 }
 .mainIntro-flex {
   @apply flex flex-col font-semibold;
@@ -79,19 +80,17 @@ animation: main2-btn 3s infinite;
     height: 100px;
   }
 }
+
 @media (max-width: 480px) {
-  .mainWrapper {
+  .mainContents {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: 120vh;
-    margin-top: -150px;
   }
   .mainIntro-flex {
     justify-content: center;
     align-items: center;
     @apply text-center;
-    margin: 40px 0;
   }
   @keyframes mainAvatar-img {
     0% {
@@ -104,4 +103,12 @@ animation: main2-btn 3s infinite;
   .main2Btn-flex_col {
     margin: 40px 0;
   }
+  .mainIntro-greetings {
+  @apply text-[34px];
+}
+.mainIntro-job {
+  font-weight: 500;
+  font-family: "Permanent Marker", cursive;
+  @apply text-[22px] mt-[5%] text-[#3242aa];
+}
 }

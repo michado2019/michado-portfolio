@@ -1,6 +1,6 @@
 .headerWrapper {
   box-shadow: 1px 1px 2px 2px #3242aa;
-  @apply px-[40px] sticky top-0 left-0 bg-[#111] h-[50px] w-[80%] mx-auto;
+  @apply px-[40px] sticky top-0 left-0 bg-[#111] h-[50px] w-[95%] mx-auto;
 }
 .headerFlex {
   @apply flex justify-between pt-2;
