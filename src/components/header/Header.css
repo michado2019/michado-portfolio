@@ -28,7 +28,7 @@
 .headerLogo {
   @apply text-[18px] font-semibold text-[#3242aa] mr-auto mt-2;
 }
-.headerTime{
+.headerTime {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,20 +43,25 @@
   border-radius: 2px;
   min-width: fit-content;
 }
-.headerTime span{
-  margin-left: 5px ;
+.headerTime span {
+  margin-left: 5px;
 }
-.headerCampaign-icon{
+#headerTime {
+  color: #3242aa;
+  font-size: 20px;
+  font-weight: 600;
+}
+.headerCampaign-icon {
   width: 45px !important;
   height: 45px !important;
   color: #3242aa !important;
   animation: campaign 1s infinite;
 }
 @keyframes campaign {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -113,9 +118,12 @@
   .headerMenu-icon {
     @apply w-7 h-7 text-[#555] !important;
   }
+  #headerTime {
+    font-size: 12px;
+  }
 }
 @media (max-width: 480px) {
-  .headerCampaign-icon{
+  .headerCampaign-icon {
     width: 35px !important;
     height: 35px !important;
   }

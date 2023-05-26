@@ -13,11 +13,11 @@ export default function About() {
         optimization techniques. I am a self-starter defined by persistence,
         curiosity, problem-solving and obsessive attention to details. I have
         a working knowledge of languages and frameworks such as React,
-        JavaScript, Html, Tailwind CSS, and CSS. I have a basic knowledge of PHP, MySql, and Firebase.I also know how to use React component
+        JavaScript, Html, Tailwind CSS, and CSS. I have a basic knowledge of PHP, MySql, and Firebase. I also know how to use React component
         libraries such as Bootstrap and Material UI. I have a good understanding of version
         control with git. I am a student of The ALT School Africa, School of Software Engineering. And also
         a graduate of Food Science and Nutrition.
-      </p >
+      </p>
       </div>
     </div>
   )

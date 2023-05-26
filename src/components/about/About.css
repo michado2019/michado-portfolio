@@ -5,12 +5,11 @@
   flex-direction: column;
   justify-content: center;
   @apply w-[100%] h-[100vh];
-  border-bottom: 1px solid #3242aa;
-  min-height: fit-content
+  min-height: fit-content;
 }
 .aboutTitle {
   font-family: "Permanent Marker", cursive;
-  background-color: #ccc;
+  background-color: #1c1c1c;
   padding-top: -50px;
   border-radius: 4px;
   width: 200px;
@@ -18,12 +17,12 @@
   padding: 3px 4px;
   @apply text-[18px] text-center text-[#3242aa] font-semibold;
 }
-.aboutFlex{
+.aboutFlex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.aboutImg{
+.aboutImg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -46,13 +45,13 @@
   }
 }
 @media (max-width: 600px) {
-  .aboutWrapper{
+  .aboutWrapper {
     height: 170vh;
   }
-  .aboutFlex{
+  .aboutFlex {
     flex-direction: column;
   }
-  .aboutImg{
+  .aboutImg {
     margin: 70px auto;
   }
   .aboutDetails {

@@ -14,8 +14,10 @@ const Contact = () => {
             rel="noreferrer"
           >
             <div className="contactFlex2">
+            <div className="contactFlex2-1">
               <EmailOutlined className="contactEmail" />
               <p className="contactEmail-text">Email</p>
+            </div>
             </div>
           </a>
           <a
@@ -25,8 +27,10 @@ const Contact = () => {
             rel="noreferrer"
           >
             <div className="contactFlex2">
+            <div className="contactFlex2-1">
               <WhatsApp className="contactWhatsapp" />
               <p className="contactWhatsapp-text">WhatsApp</p>
+            </div>
             </div>
           </a>
         </div>
