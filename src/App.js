@@ -11,23 +11,27 @@ import SmallScreenNavbar from "./components/smallScreenNavbar/SmallScreenNavbar"
 import TechWriting from "./components/techWriting/TechWriting";
 import Contact from "./components/contact/Contact";
 import { KeyboardDoubleArrowUp } from "@mui/icons-material";
+import About from "./components/about/About";
 
 function App() {
   //use state
-  const [display, setDisplay] = useState(false);         
-  const [count, setCount] = useState(() => {            //State for count
+  const [display, setDisplay] = useState(false);
+  const [count, setCount] = useState(() => {
+    //State for count
     const savedCount = localStorage.getItem("count");
-    const parsedSavedCount = parseInt(savedCount)
+    const parsedSavedCount = parseInt(savedCount);
     return parsedSavedCount ? parsedSavedCount : 0;
   });
-  const [minute, setMinute] = useState(() => {          //State for minute
+  const [minute, setMinute] = useState(() => {
+    //State for minute
     const savedMinute = localStorage.getItem("minute");
-    const parsedSavedMinute = parseInt(savedMinute)
+    const parsedSavedMinute = parseInt(savedMinute);
     return parsedSavedMinute ? parsedSavedMinute : 0;
   });
-  const [hour, setHour] = useState(() => {               //State for hour
+  const [hour, setHour] = useState(() => {
+    //State for hour
     const savedHour = localStorage.getItem("hour");
-    const parsedSavedHour = parseInt(savedHour)
+    const parsedSavedHour = parseInt(savedHour);
     return parsedSavedHour ? parsedSavedHour : 0;
   });
 
@@ -36,13 +40,13 @@ function App() {
     // Function to set time
     const time = () => {
       if (count < 59) {
-        setCount(prev => prev + 1);
+        setCount((prev) => prev + 1);
       } else {
         setCount(0);
-        setMinute(prev => prev + 1);
+        setMinute((prev) => prev + 1);
       }
-      if (minute === 60 ) {
-        setHour(prev => prev + 1);
+      if (minute === 60) {
+        setHour((prev) => prev + 1);
         setMinute(0);
       }
 
@@ -63,25 +67,24 @@ function App() {
   return (
     <BrowserRouter>
       <div className="appWrapper">
-        <Header setDisplay={setDisplay} display={display} count={count} minute={minute} hour={hour}/>
+        <Header
+          setDisplay={setDisplay}
+          display={display}
+          count={count}
+          minute={minute}
+          hour={hour}
+        />
         <SmallScreenNavbar display={display} setDisplay={setDisplay} />
         <Switch>
           <Route exact path="/michado-portfolio" component={Main} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/about" component={About} />
           <Route path="*" component={PageNotFound} />
         </Switch>
         <Route />
-        <div id="about">
-        </div>
-        <div>
-          <Skills />
-        </div>
-        <div>
-          <TechWriting />
-        </div>
-        <div>
-          <Contact />
-        </div>
+        <Skills />
+        <TechWriting />
+        <Contact />
         <a href="#top" className="footerArrow-div">
           <KeyboardDoubleArrowUp className="footerArrow" />
         </a>

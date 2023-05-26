@@ -2,14 +2,25 @@ import React from "react";
 import "./Main.css";
 import avatarImg from "./assets/mainAvatar.jpg";
 import About from "../about/About";
+import Projects from "../projects/Projects";
 export default function Main() {
   return (
     <div className="mainWrapper" id="top">
       <div className="mainContents">
-        <div className="mainIntro-flex">
-          <span className="mainIntro-greetings">Hello!</span>
-          <span className="mainIntro-greetings">I'm Mike</span>
-          <span className="mainIntro-job">FRONT-END DEVELOPER</span>
+        <div className="container">
+          <p className="hello">Hello 👋 </p>
+          <p className="name1">Mike</p>
+          <p className="name2">Adeshina</p>
+          <div className="animation">
+            <div className="first">
+            </div>
+            <div className="second">
+              <div>Web Developer</div>
+            </div>
+            <div className="third">
+              <div>Phones Engineer</div>
+            </div>
+          </div>
         </div>
         <div className="main2">
           <img src={avatarImg} alt="img" className="mainAvatar-img" />
@@ -45,6 +56,7 @@ export default function Main() {
         </div>
       </div>
       <About />
+      <Projects />
     </div>
   );
 }

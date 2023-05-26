@@ -1,17 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.css'
-import { CancelOutlined, Menu } from '@mui/icons-material'
+import { CampaignOutlined, CancelOutlined, Menu } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import MenuItem from '@mui/material/MenuItem'
 import logoImg from './assets/logoPortfolio.png'
 export default function Header({setDisplay, display, count, minute, hour}) {
 
+
+  //States
+   const [timeDisplay, setTimeDisplay] = useState(true)
+  //Handlers
   function handleMenu() {
     setDisplay(prev => !prev)
   }
   function handleMenuCancel() {
     setDisplay(false)
   }
+
+  useEffect(() => {
+
+  const handleTime = () => {
+
+    setTimeDisplay(prev => !prev)
+    console.log(timeDisplay)
+  }
+
+  const interval = setInterval(handleTime, 20000)
+  return () => {
+    clearInterval(interval)
+  }
+  }, [timeDisplay])
   return (
     <div className='headerWrapper'>
       <div className='headerFlex'>
@@ -19,7 +37,8 @@ export default function Header({setDisplay, display, count, minute, hour}) {
           <img src={logoImg} alt='logo' className='headerLogo-img'/>
           <h1 className='headerLogo'>Michado</h1>
         </Link>
-        <div className="headerTime">
+        <div className="headerTime" style={{opacity: timeDisplay? "1" : "0", transition: "all 0.5s"}}>
+          <CampaignOutlined className='headerCampaign-icon'/>
           <span>Spent time: </span>
           <span>{hour}h : {minute}m : {count}s</span>
         </div>
@@ -36,11 +55,11 @@ export default function Header({setDisplay, display, count, minute, hour}) {
                 <MenuItem className='menuItems'>Home</MenuItem>
               </div>
             </Link>
-            <a href='#about'>
+            <Link to='/about'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>About</MenuItem>
               </div>
-            </a>
+            </Link>
             <Link to='/projects'>
               <div className='menuContent-text'>
                 <MenuItem className='menuItems'>Projects</MenuItem>

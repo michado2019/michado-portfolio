@@ -46,6 +46,20 @@
 .headerTime span{
   margin-left: 5px ;
 }
+.headerCampaign-icon{
+  width: 45px !important;
+  height: 45px !important;
+  color: #3242aa !important;
+  animation: campaign 1s infinite;
+}
+@keyframes campaign {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .headerMenu-icon {
   display: none !important;
   @apply w-10 h-10 text-[#555] cursor-pointer !important;
@@ -98,5 +112,11 @@
   }
   .headerMenu-icon {
     @apply w-7 h-7 text-[#555] !important;
+  }
+}
+@media (max-width: 480px) {
+  .headerCampaign-icon{
+    width: 35px !important;
+    height: 35px !important;
   }
 }

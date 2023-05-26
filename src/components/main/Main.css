@@ -1,4 +1,4 @@
-.mainWrapper{
+.mainWrapper {
 }
 .mainContents {
   height: 100vh;
@@ -7,18 +7,6 @@
   justify-content: space-evenly;
   margin: 0 auto;
   border-bottom: 1px solid #3242aa;
-}
-.mainIntro-flex {
-  @apply flex flex-col font-semibold;
-}
-.mainIntro-greetings {
-  font-family: "Permanent Marker", cursive;
-  @apply text-[32px] pb-[16px] text-[#ccc];
-}
-.mainIntro-job {
-  font-weight: 500;
-  font-family: "Permanent Marker", cursive;
-  @apply text-[18px] mt-[5%] text-[#3242aa];
 }
 .main2Btn-flex_col {
   display: flex;
@@ -42,18 +30,6 @@
   margin-left: 9px;
   transition: all 4s;
 }
-#main2-btn{
-  margin-top: -10px;
-animation: main2-btn 3s infinite;
-}
-@keyframes main2-btn {
-  0%{
-    margin-top:0;
-  } 
-  100%{
-    margin-top: 10px;
-  } 
-}
 .mainAvatar-img {
   border-radius: 50%;
   margin-top: 0;
@@ -68,6 +44,110 @@ animation: main2-btn 3s infinite;
     margin-top: 0;
   }
 }
+#main2-btn {
+  margin-top: -10px;
+  animation: main2-btn 3s infinite;
+}
+@keyframes main2-btn {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+.container {
+  color: #e5e5e5;
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  line-height: 60px;
+}
+.hello {
+  color: #3242aa !important;
+  font-size: 23.4px;
+  font-family: "Dancing Script", cursive;
+  @apply text-[32px] pb-[16px] text-[#ccc];
+}
+.name1,
+.name2 {
+  font-size: 2.7rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2rem;
+  text-shadow: #3242aa 0px 4px 4px;
+  font-family: "Yatra One", cursive;
+  -webkit-text-stroke: 1px #3242aa;
+  font-weight: 700;
+}
+.name2 {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.animation {
+  height: 50px;
+  overflow: hidden;
+}
+.animation > div > div {
+  padding: 0.3rem;
+  width: 200px;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+  text-align: left;
+}
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+.second div {
+  text-align: center;
+  background-color: #3242aa;
+  font-weight: 500;
+  border-radius: 3px;
+  @apply text-[16px] mt-[5%] text-[#ccc];
+  margin-left: 10px;
+}
+.third div {
+  text-align: center;
+  border-radius: 3px;
+  background-color: #ccc;
+  font-weight: 500;
+  color: #3242aa !important;
+  @apply text-[16px] mt-[5%] text-[#ccc];
+}
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .mainIntro-greetings {
     font-size: 16px;
@@ -75,22 +155,25 @@ animation: main2-btn 3s infinite;
   .mainIntro-job {
     font-size: 14px;
   }
-  .mainAvatar-img{
+  .mainAvatar-img {
     width: 100px;
     height: 100px;
   }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .mainContents {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .mainIntro-flex {
-    justify-content: center;
+  .container {
+    margin-bottom: 40px;
+    flex-direction: column;
     align-items: center;
-    @apply text-center;
+    justify-content: center;
+  }
+  .animation > div > div {
+    text-align: center;
   }
   @keyframes mainAvatar-img {
     0% {
@@ -100,15 +183,21 @@ animation: main2-btn 3s infinite;
       margin-left: 0;
     }
   }
-  .main2Btn-flex_col {
-    margin: 40px 0;
+  #main2-btn {
+    margin-top: 5px;
+    animation: none;
   }
+}
+.main2Btn-flex_col {
+  margin: 40px 0;
+}
+@media (max-width: 480px) {
   .mainIntro-greetings {
-  @apply text-[34px];
-}
-.mainIntro-job {
-  font-weight: 500;
-  font-family: "Permanent Marker", cursive;
-  @apply text-[22px] mt-[5%] text-[#3242aa];
-}
+    @apply text-[34px];
+  }
+  .mainIntro-job {
+    font-weight: 500;
+    font-family: "Permanent Marker", cursive;
+    @apply text-[22px] mt-[5%] text-[#3242aa];
+  }
 }
