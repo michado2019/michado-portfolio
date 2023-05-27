@@ -6,6 +6,7 @@
   justify-content: center;
   @apply w-[100%] h-[100vh];
   min-height: fit-content;
+  border-bottom: 1px solid #3242aa;
 }
 .aboutTitle {
   font-family: "Permanent Marker", cursive;

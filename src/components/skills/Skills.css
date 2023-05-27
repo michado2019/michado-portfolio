@@ -26,9 +26,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 1px 2px 4px 3px #3242aa;
+  box-shadow: 1px 1px 2px 1px #3242aa;
   padding: 3px;
-  animation: skills 0.3s
+  animation: skills 0.3s;
+  margin: 10px;
 }
 @keyframes skills {
   0%{
@@ -72,4 +73,12 @@
     .skillsContents {
         grid-template-columns: repeat(3, 1fr);
       }
+}
+@media (max-width: 300px) {
+  .skillsWrapper{
+      height: 110vh;
+  }
+  .skillsContents {
+      grid-template-columns: repeat(2, 1fr);
+    }
 }

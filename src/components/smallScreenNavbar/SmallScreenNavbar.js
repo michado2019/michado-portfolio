@@ -17,13 +17,13 @@ function SmallScreenNavbar({ display, setDisplay }) {
       >
         Home
       </Link>
-      <a
-        href="#about"
+      <Link
+        to="/about"
         className="smallScreen-navbar_link"
         onClick={handleNavClose}
       >
         About
-      </a>
+      </Link>
       <Link
         to="/projects"
         className="smallScreen-navbar_link"

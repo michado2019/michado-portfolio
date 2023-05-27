@@ -11,8 +11,9 @@
     width: 30px;
     height: 30px;
     border: 3px solid #3242aa;
-    box-shadow: 2px 3px 5px #ccc;
+    box-shadow: 2px 3px 5px #1c1c1c;
     border-radius: 50%;
+    background-color: #1c1c1c;
 }
 .paginationBtn:hover{
     width: 35px;
@@ -30,7 +31,8 @@
     border-radius: 50%;
     border: 3px solid #3242aa;
     cursor: pointer;
-    box-shadow: 2px 3px 5px #ccc;
+    box-shadow: 2px 3px 5px #1c1c1c;
+    background-color: #1c1c1c;
   }
   .prev:hover, .next:hover {
     color: #3242aa;

@@ -1,12 +1,12 @@
 .mainWrapper {
 }
 .mainContents {
+  border-bottom: 1px solid #3242aa;
   height: 80vh;
   @apply flex p-2;
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
-  border-bottom: 1px solid #3242aa;
 }
 .main2Btn-flex_col {
   display: flex;
@@ -168,6 +168,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh
   }
   .container {
     margin: 70px 0;
@@ -186,6 +187,10 @@
       margin-left: 0;
     }
   }
+.name1,
+.name2 {
+  font-size: 2.1rem;
+}
   #main2-btn {
     margin-top: 5px;
     animation: none;
