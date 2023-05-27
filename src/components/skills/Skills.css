@@ -1,8 +1,7 @@
 .skillsWrapper {
   padding: 0 2.5%;
-  padding-top: 70px;
   border-bottom: 1px solid #3242aa;
-  height: 80vh;
+  height:80vh;
   min-height: fit-content;
 }
 .skillsContents {
@@ -15,11 +14,16 @@
   text-align: center;
   font-family: "Permanent Marker", cursive;
   padding-bottom: 100px;
-  margin: 70px auto;
-  background-color: #1c1c1c;
+  margin: 0 15px;
   border-radius: 4px;
-  width: 180px;
-  padding: 3px 4px;
+  padding: 3px 7px;
+  background-color: #1c1c1c;
+}
+.skillsTitle-avatar {
+  width: 23px !important;
+  height: 23px !important;
+  color: #1c1c1c !important;
+  background-color: #3242aa !important;
 }
 .skillsContent {
   display: flex;
@@ -29,7 +33,7 @@
   box-shadow: 1px 1px 2px 1px #3242aa;
   padding: 3px;
   animation: skills 0.3s;
-  margin: 10px;
+  margin: 40px 10px;
 }
 @keyframes skills {
   0%{
@@ -68,7 +72,7 @@
 }
 @media (max-width: 480px) {
     .skillsWrapper{
-        height: 110vh;
+        height: 120vh;
     }
     .skillsContents {
         grid-template-columns: repeat(3, 1fr);
@@ -76,7 +80,7 @@
 }
 @media (max-width: 300px) {
   .skillsWrapper{
-      height: 110vh;
+      height: 170vh;
   }
   .skillsContents {
       grid-template-columns: repeat(2, 1fr);

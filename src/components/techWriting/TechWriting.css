@@ -18,15 +18,15 @@
   color: #3242aa;
   font-size: 18px;
   font-family: "Permanent Marker", cursive;
-  margin: 0 auto;
-  margin-bottom: 150px;
-  margin-top: -70px;
-  text-align: center;
-  background-color: #1c1c1c;
   border-radius: 4px;
-  width: 180px;
   text-align: center;
-  padding: 3px 4px;
+  margin: 0 15px;
+}
+.techWrittin-title_avatar{
+  width: 23px !important;
+  height: 23px !important;
+  color: #1c1c1c !important;
+  background-color: #3242aa !important;
 }
 .techWriting-title {
   background-color: #fff;

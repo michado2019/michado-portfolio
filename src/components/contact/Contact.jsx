@@ -1,11 +1,14 @@
-import { EmailOutlined, WhatsApp } from "@mui/icons-material";
+import { ContactMail, EmailOutlined, WhatsApp } from "@mui/icons-material";
 import React from "react";
 import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contactWrapper">
       <div className="contactContent">
+      <div className='titlesDiv'>
+        <ContactMail className="contactTitle-avatar"/>
         <h2 className="contactTitle">Contact</h2>
+      </div>
         <div className="contactFlex">
           <a
             href="mailto:adeshinaobafemi09@gmail.com"

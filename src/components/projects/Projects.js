@@ -3,6 +3,7 @@ import "./Project.css";
 import soloProjectsData from "./projectData/SoloProjectData";
 import collaborativeProjectsData from "./projectData/CollaborativeProjectData";
 import Pagination from "../Pagination";
+import { Work } from "@mui/icons-material";
 function Projects() {
   const [page, setPage] = useState(1);
 
@@ -13,7 +14,10 @@ function Projects() {
   return (
     <div className="projectsWrapper">
       <div>
-        <h3 className="projectsTitle">Solo projects</h3>
+        <div className="titlesDiv">
+          <Work className="projectsTitle-avatar" />
+          <h3 className="projectsTitle">Solo projects</h3>
+        </div>
       </div>
       <div className="projectsContents">
         {soloProjectsData.slice(skip, skip + perPage).map((each) => {
@@ -44,7 +48,10 @@ function Projects() {
       <Pagination page={page} pages={pages} setPage={setPage} />
 
       <div>
-        <h3 className="projectsTitle">Collaborative projects</h3>
+        <div className="titlesDiv">
+          <Work className="projectsTitle-avatar" />
+          <h3 className="projectsTitle">Collaborative projects</h3>
+        </div>
       </div>
       <div className="projectsContents">
         {collaborativeProjectsData.slice(skip, skip + perPage).map((each) => {

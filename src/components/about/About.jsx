@@ -1,10 +1,14 @@
 import React from 'react'
 import './About.css'
 import aboutImg from './assets/profile-pix.jpg'
+import { Avatar } from '@mui/material'
 export default function About() {
   return ( 
     <div className='aboutWrapper' id="about">
+      <div className='titlesDiv'>
+      <Avatar className='aboutTitle-avatar'/>
       <h3 className='aboutTitle'>About Me</h3>
+      </div>
       <div className='aboutFlex'>
        <img src={aboutImg} alt="img" className="aboutImg" />
        <p className='aboutDetails'>

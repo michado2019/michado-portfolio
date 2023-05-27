@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.css";
 import { skills } from "./skillsData/SkillsData";
 import { useState, useEffect } from "react";
+import { Settings } from "@mui/icons-material";
 const Skills = () => {
   //States
   const [data, setData] = useState([]); // Array to hold the data skills
@@ -33,7 +34,10 @@ const Skills = () => {
 
   return (
     <div className="skillsWrapper">
-      <h2 className="skillsTitle">Skills</h2>
+      <div className="titlesDiv">
+        <Settings className="skillsTitle-avatar" />
+        <h2 className="skillsTitle">Skills</h2>
+      </div>
       <div className="skillsContents">
         {data.map((skill, index) => {
           return (

@@ -22,3 +22,14 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; 
   border: 3px solid #323232; 
 }
+.titlesDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  margin: 0 auto;
+  padding: 3px 7px;
+  min-width: fit-content;
+  max-width: 300px;
+}
+

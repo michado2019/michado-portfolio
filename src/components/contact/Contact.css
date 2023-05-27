@@ -17,9 +17,14 @@
   font-size: 18px;
   background-color: #1c1c1c;
   border-radius: 4px;
-  width: 180px;
-  padding: 3px 4px;
+  margin: 0 15px;
   text-align: center;
+}
+.contactTitle-avatar{
+  width: 23px !important;
+  height: 23px !important;
+  color: #1c1c1c !important;
+  background-color: #3242aa !important;
 }
 .contactFlex {
   display: flex;

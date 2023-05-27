@@ -10,13 +10,16 @@
 }
 .aboutTitle {
   font-family: "Permanent Marker", cursive;
-  background-color: #1c1c1c;
   padding-top: -50px;
   border-radius: 4px;
-  width: 200px;
-  margin: 20px auto;
-  padding: 3px 4px;
+  margin: 0 15px;
   @apply text-[18px] text-center text-[#3242aa] font-semibold;
+}
+.aboutTitle-avatar {
+  width: 23px !important;
+  height: 23px !important;
+  color: #1c1c1c !important;
+  background-color: #3242aa !important;
 }
 .aboutFlex {
   display: flex;
@@ -27,14 +30,15 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 1px 1px 19px 20px #3242aa;
+  box-shadow: 1px 1px 9px 10px #3242aa;
   @apply mx-auto;
 }
 .aboutDetails {
   line-height: 32px;
   padding: 20px 20px;
   margin-top: 40px;
-  box-shadow: -2px 3px 7px #3242aa;
+  border-top: 1px solid #3242aa;
+  border-bottom: 1px solid #3242aa;
   @apply text-[#ccc] max-w-[65%] mx-auto rounded-2xl text-[16px] text-center;
 }
 @media (max-width: 768px) {

@@ -1,12 +1,10 @@
-.mainWrapper {
-}
+
 .mainContents {
   border-bottom: 1px solid #3242aa;
   height: 80vh;
   @apply flex p-2;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 auto;
 }
 .main2Btn-flex_col {
   display: flex;
@@ -15,13 +13,39 @@
   justify-content: space-between;
   color: #ccc;
 }
+.main2Btn-div{
+  display: flex;
+  align-items: center;
+}
+.main2Download-icon {
+  color: #3242aa !important;
+  margin-left: -50px;
+  width: 35px !important;
+  height: 35px !important;
+  animation: download 5s infinite;
+}
+@keyframes download {
+  0%{
+    margin-top: -80px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+.main2Whatsapp-icon {
+  color: #3242aa !important;
+  margin-left: -50px;
+  width: 35px !important;
+  height: 35px !important;
+}
 .main2-btns {
   color: #ccc;
   border: 1px solid #3242aa;
   background-color: #1c1c1c;
-  font-size: 12px;
-  margin: 3px;
-  padding: 4px 30px;
+  font-size: 14px;
+  margin: 5px 0;
+  width: 200px;
+  padding: 12px 10px;
   border-radius: 4px;
   font-weight: 550;
 }
@@ -45,17 +69,9 @@
     margin-top: 0;
   }
 }
-#main2-btn {
-  margin-top: -10px;
-  animation: main2-btn 3s infinite;
-}
-@keyframes main2-btn {
-  0% {
-    margin-top: 0;
-  }
-  100% {
-    margin-top: 10px;
-  }
+.main-flex_div{
+  @apply flex justify-between items-start;
+  margin-top: 60px;
 }
 .container {
   color: #e5e5e5;
@@ -168,7 +184,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh
+    height: 120vh
   }
   .container {
     margin: 70px 0;
@@ -190,6 +206,9 @@
 .name1,
 .name2 {
   font-size: 2.1rem;
+}
+.main2-btns{
+  margin-left: -0px;
 }
   #main2-btn {
     margin-top: 5px;
