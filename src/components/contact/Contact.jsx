@@ -9,6 +9,7 @@ const Contact = () => {
         <ContactMail className="contactTitle-avatar"/>
         <h2 className="contactTitle">Contact</h2>
       </div>
+        <h2 className="contactTalk">Can we talk?</h2>
         <div className="contactFlex">
           <a
             href="mailto:adeshinaobafemi09@gmail.com"
