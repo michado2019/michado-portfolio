@@ -95,3 +95,8 @@
     margin-left: 10px;
   }
 }
+@media (max-width: 375px) {
+  .contactTalk{
+    font-size: 20px;
+  }
+}
