@@ -1,8 +1,8 @@
 .techWriting-wrapper {
-  margin: 0 auto;
+  margin: 70px auto;
   padding: 120px 0;
   border-bottom: 1px solid #3242aa;
-  height: 120vh;
+  height: 150vh;
   min-height: fit-content;
 }
 .techWriting-content {

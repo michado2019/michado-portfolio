@@ -10,5 +10,11 @@ export const techWritingData = [
         img: 'https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/hGV2TfOh0ns/upload/3ba75a51a8ec414360a139ca30b07814.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
         title: 'How I built a blog site using React and Firebase',
         link: 'https://michado2019.hashnode.dev/how-i-built-a-blog-site-using-react-and-firebase'
+    },
+    {
+        id: 3,
+        img: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1684755056618/3ad204d0-c52e-4fc0-8518-c4790fcd46e5.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+        title: 'Understanding react hooks( useReducer )',
+        link: 'https://michado2019.hashnode.dev/understanding-react-hooks'
     }
 ]

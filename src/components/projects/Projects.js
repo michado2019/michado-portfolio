@@ -22,7 +22,7 @@ function Projects() {
       <div className="projectsContents">
         {soloProjectsData.slice(skip, skip + perPage).map((each) => {
           return (
-            <div className="projectsContent" key={each.id}>
+            <div className="projectsContent" key={each.id} style={{backgroundColor: each.id % 2 === 0 ? "#3242aa" : ""}}>
               <a
                 href={each.app_link}
                 className="projectsSearch-link"
@@ -56,7 +56,7 @@ function Projects() {
       <div className="projectsContents">
         {collaborativeProjectsData.slice(skip, skip + perPage).map((each) => {
           return (
-            <div className="projectsContent" key={each.id}>
+            <div className="projectsContent" key={each.id} style={{backgroundColor: each.id % 2 === 0 ? "#3242aa" : ""}}>
               <a
                 href={each.app_link}
                 className="projectsSearch-link"
